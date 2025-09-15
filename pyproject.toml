@@ -1,0 +1,18 @@
+[project]
+name = "cafe-and-wifi-website"
+version = "0.1.0"
+description = "Cafe and WiFi Website using Flask"
+authors = [
+    {name = "adityajain1812", email = "142815869+Adityajain1812@users.noreply.github.com"}
+]
+requires-python = ">=3.11"
+dependencies = [
+    "flask (>=3.1.2,<4.0.0)"
+]
+
+[tool.poetry]
+package-mode = false
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
