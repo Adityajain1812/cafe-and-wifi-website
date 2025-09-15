@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cafe & WiFi Finder</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header class="hero">
+        <h1>☕ Cafe & WiFi Finder</h1>
+        <p>Find the best cafes with fast WiFi, power, and cozy vibes</p>
+    </header>
+
+    <main class="container">
+        <div class="grid">
+            {% for cafe in cafes %}
+            <div class="card">
+                <h2>{{ cafe.name }}</h2>
+                <ul>
+                    <li><strong>WiFi:</strong> {{ cafe.wifi }}</li>
+                    <li><strong>Power:</strong> {{ cafe.power }}</li>
+                    <li><strong>Location:</strong> {{ cafe.location }}</li>
+                </ul>
+            </div>
+            {% endfor %}
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Cafe & WiFi Finder | Built with Flask</p>
+    </footer>
+</body>
+</html>
