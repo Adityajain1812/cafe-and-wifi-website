@@ -6,7 +6,7 @@ cafes = [
     {"name": "Blue Bottle Cafe", "wifi": "Fast", "power": "Available", "location": "Downtown"},
     {"name": "Starbean Coffee", "wifi": "Good", "power": "Few outlets", "location": "Uptown"},
     {"name": "The Work Hub", "wifi": "Excellent", "power": "Plenty", "location": "Midtown"},
-    {"name": "Cuppa Connect", "wifi": "Reliable", "power": "Available", "location": "East Side"}
+    {"name": "Byte Bistro", "wifi": "Reliable", "power": "Available", "location": "East Side"}
 ]
 
 
@@ -17,4 +17,5 @@ def home():
 
 if __name__ == "__main__":
     app.run(debug=True)
+
 
